@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+*{
+    padding: 0;margin: 0;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1vh 1vw;
+    background-color: rgb(139, 139, 216) ;
+    color: blanchedalmond;
+}
+.nav h3{
+    border: 2px solid blanchedalmond;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px beige;
+    background-color: rgb(104, 104, 225);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav li{
+    padding: 0vh 2.5vw;
+}
+.nav li a{
+    padding: 30px 2vw;
+    text-decoration:none ;
+    color: blanchedalmond;
+    font-size: 1.2rem;
+    border-radius: 14px;
+}
+.nav li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* GameContainer Styling */
+.gameContainer{
+    display: flex;
+}
+.gameBox{
+    /* background-color: aqua; */
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10%; */
+}
+.scoreBox h1{
+    padding: 2.5vh 0;
+    padding-bottom: 3vh;
+    font-size: 2.3em;
+    color: rgb(139, 139, 216);
+    text-shadow: 2px 2px black;
+    /* font-family: 'BIZ UDPGothic', sans-serif;
+     */
+     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.scoreBox label{
+    font-size: 1.2em;
+    padding-bottom: 1vh;
+    /* display: inline-block; */
+}
+.scoreBox input{
+    width: 60%;
+    height: 4vh;
+    /* margin-bottom: 3vh; */
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: .5%;
+}
+.scoreBox{
+    background-color:rgb(211, 211, 241) ;
+    width: 40%;
+    height: 86.5vh;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vh 0;
+}
+.box{
+    width: 10vw;
+    height: 10vw;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(128, 128, 128, 0.493);
+    border: 2px solid rgba(0,0,0,0.3);
+    font-size: 3em;
+}
+
+#btn{
+    margin-top: 1.5vh;
+ padding: 1vh 3vw;  
+ font-size: 1.1em; 
+ border: 3px solid black;
+ border-radius: 20px;
+ box-shadow: 3px 3px rgba(128, 128, 128, 0.776);
+ font-weight: bold;
+}
+#btn:hover{
+    background-color: rgba(128, 128, 128, 0.276);
+}
+#chance{
+    position: absolute;
+    top: 12%;
+    left: 21%;
+    font-family: 'BIZ UDPGothic', sans-serif;
+}
+.X-0{
+    color: black;
+    font-size: 6em;
+}
+.line{
+    width: 39vw;
+    background-color: black;
+    height: .5vh;
+    position: absolute;
+    display: none;
+    transition: all .5s ease-in;
+}
+.animation-line{
+    animation: line .5s linear;
+}
+@keyframes line{
+0%{
+    transform: rotate(180deg);
+}100%{
+    transform: rotate(360deg);
+}
+}
+
+.line1{
+    left: 0%;
+    top: 53%;
+    transform: rotate(90deg);
+}
+.line2{
+    left: 10.5%;
+    top: 53%;
+    transform: rotate(90deg);
+}
+.line3{
+    left: 21%;
+    top: 53%;
+    transform: rotate(90deg);
+}
+.line4{
+    top: 36.5%;
+    left: 10%;
+}
+.line5{
+    top: 51%;
+    left: 10%;
+}
+.line6{
+    top: 66%;
+    left: 10%;
+}
+.line7{
+    left: 11%;
+    top: 53%;
+    transform: rotate(-135deg);
+}
+.line8{
+    left: 10%;
+    top: 53%;
+    transform: rotate(135deg);
+}
+.image{
+    position: absolute;
+    top: 59%;
+    right: 7%;
+    display: none;
+    transition: all .4s ease-out;
+}
+.animation-img{
+    animation: img 2s linear;
+}
+@keyframes img {
+    0%{
+        top: 6%;
+        right: 65%;
+        transform: rotate(180deg);
+    }25%{
+        transform: rotate(360deg);
+    }50%{
+        transform: rotate(540deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+
+.winner{
+    margin: 2vh 0;
+    font-size: 2em;
+    color: orangered;
+    text-shadow: 2px 2px white;
+}

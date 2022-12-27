@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac toe Game</title>
+    <link rel="stylesheet" href="./style.css    ">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav">
+            <h3>My TicTacToe game</h3>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <!-- End of Navbar -->
+    <h1 id="chance">Best of luck!</h1>
+    <div class="gameContainer">
+        <div class="gameBox">
+        <div class="row1">
+            <div class="box" id="1" onclick=Game(this.id)>1</div>
+            <div class="box" id="2" onclick=Game(this.id)>2</div>
+            <div class="box" id="3" onclick=Game(this.id)>3</div>
+        </div>
+        <div class="row2">
+            <div class="box" id="4" onclick=Game(this.id)>4</div>
+            <div class="box" id="5" onclick=Game(this.id)>5</div>
+            <div class="box" id="6" onclick=Game(this.id)>6</div>
+        </div>
+        <div class="row3">
+                <div class="box" id="7" onclick=Game(this.id)>7</div>
+                <div class="box" id="8" onclick=Game(this.id)>8</div>
+                <div class="box" id="9" onclick=Game(this.id)>9</div>
+        </div>
+        </div>
+        <!-- **************** End of Game Box ***************** -->
+        <div class="scoreBox">
+            <h1>Welcome to Tic Tac Toe  <br>Game</h1>
+            <label for="player1">Enter player1 name(X) :</label><input type="text" id="p1" style="margin-bottom:2vh;" placeholder="Enter  player 1 name..">
+            <label for="player1">Enter player2 name(0) :</label><input type="text" id="p2" placeholder="Enter  player 2 name..">
+            <button id="btn" onclick=startGame()>Start</button>
+            <p class="winner"></p>
+        </div>
+    </div>
+    <div class="line animation-line"></div>
+    <img src="./milk-and.gif" alt="Dancing bears" class="image animation-img">
+    <audio src="./gta-san-andreas-mission-complete-sound-hq.mp3" id="music"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
